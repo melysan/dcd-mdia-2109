@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Review</title>
+<style>
+
+body {
+    margin: 0;
+    }
+
+#main {
+    background-color: #fad;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.items {
+    background-color: #add;
+    height: 300px;
+    flex-grow:1;
+    flex-basis: 100px; /* shortcut for flex-grow, flex-shrink, and flex basis - flex: 1 1 100px; */
+    flex: 1;
+    /* same as line 31. flex: 1 1 0; */
+}
+
+
+#diff_grow {
+    background-color: #dda;
+    flex-shrink:2;
+}
+
+</style>
+
+</head>
+<body>
+<div id="main">
+<div class="items"></div>
+<div class="items" id="diff_grow"></div>
+<div class="items"></div>
+<div class="items"></div>
+</div>
+
+
+</body>
+</html>

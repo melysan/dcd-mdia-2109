@@ -1,0 +1,25 @@
+#menu {
+    width: 100px;
+    height: 300px;
+    background-color: aqua;
+    position: fixed;
+    right: -100px;
+    top: 0px;
+    transition:right 0.5s;
+}
+
+#head, .content{
+    font-size: 32px;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    left: -20px;
+    opacity: 0;
+    transition: opacity 1.5s, left 2s;
+}
+
+.content {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}

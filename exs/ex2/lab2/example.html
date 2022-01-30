@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Example of the Redraw</title>
+        <style>
+            .header {
+                font-size: 42px;
+                font-weight: bolder;
+                padding: 10px;
+            }
+
+            .desc {
+                background-color: red;
+                transition: background-color 2s;
+            }
+
+            .info {
+                width: 200px;
+                height: 200px;
+            }
+
+            .clickhere {
+               background-color:blueviolet;
+               height: 50px;
+               width: 50px; 
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header" onclick="Rewrite()">HEADER</div>
+        <button class="clickhere" onclick="Height()">Click Here</button>
+        <div class="desc" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat quis ipsum aliquid reiciendis ab recusandae ipsa, nemo dicta molestiae quibusdam laboriosam omnis pariatur officiis soluta blanditiis illo assumenda reprehenderit incidunt!</div>
+
+        <div class="info" onclick="Width(); Rewrite();">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro deserunt dignissimos earum aperiam, saepe in? Voluptas earum qui at maiores adipisci nemo. Molestiae nihil in vero voluptatem enim! Et, aut!</div>
+
+        <script>
+            console.log(window);
+
+            function Rewrite(){
+            document.querySelector(".desc").style.backgroundColor = "blue";
+            }
+
+            //change the width and height of an object in the document//
+
+            function Width(){
+            document.querySelector(".info").style.width = "800px";
+            }
+
+            function Height(){
+            document.querySelector(".desc").style.height = "400px";
+            }
+        </script>
+
+    </body>
+</html>

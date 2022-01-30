@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complex Things</title>
+        <link href="css/complex.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <button 
+        id="ctrl"
+        onclick="SlideMenuIn()">Open</button>
+        <div id="menu">Menu</div>
+        <div id="head">Header</div>
+        <div class="content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae vitae eaque, doloribus magnam sit dolorum! Maxime officiis aliquam nesciunt voluptas repellendus itaque labore eos, at, autem reprehenderit corrupti, maiores tenetur?</div>
+
+        <script>
+            function SlideMenuIn(){
+                console.log("hi")
+                //debugger; is good for checking to see if it's working
+                document.querySelector("#menu").style.right = "0px";
+                //debugger;
+
+                document.querySelector("#head").style.left = "0px";
+                document.querySelector("#head").style.opacity = 1;
+                //debugger;
+                setTimeout(()=>{
+                document.querySelector(".content").style.left = "0px";
+                document.querySelector(".content").style.opacity = 1;
+                }, 1500);
+            }
+        </script>
+    </body>
+</html>
